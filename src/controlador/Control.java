@@ -40,9 +40,9 @@ public class Control implements ActionListener {
 
             objListas.setNumprocesos(Integer.parseInt(objInterfaz.getTxtnprocesos().getText()));
 
-            for (int i = 0; i <=  objListas.getNumprocesos(); i++) {
+            for (int i = 0; i <= objListas.getNumprocesos(); i++) {
                 System.out.println(i);
-                if (i == objListas.getNumprocesos()) {
+                if (i <= objListas.getNumprocesos()) {
                     objFormulario.getBtnañadir().setEnabled(false);
                 }
             }
@@ -76,7 +76,7 @@ public class Control implements ActionListener {
                 }
             }
 
-            System.out.println("Proceso: "+objProceso.getNombre() +"\nTamaño: "+ objProceso.getTamaño());
+            System.out.println("Proceso: " + objProceso.getNombre() + "\nTam: " + objProceso.getTamaño());
         }
 
     }
